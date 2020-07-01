@@ -1,5 +1,4 @@
 # Data Science Portfolio - Shoaib Mehmood
-Data Science Portfolio
 
 
 ## Master's Thesis - Estimating House Prices through Machine Learning
