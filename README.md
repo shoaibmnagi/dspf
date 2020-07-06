@@ -3,7 +3,7 @@
 
 ## Master's Thesis - Estimating House Prices through Machine Learning
  
- ![Distribution of Obsvs given Sale Price](https://github.com/shoaibmnagi/dspf/blob/master/images/comb.png)
+ ![Distribution of Obsvs given Sale Price](/images/comb.png)
  
   For my Master's thesis at the University of Mannheim, I used machine learning algorithms to predict house prices in Germany and compare the results with the traditional hedonic pricing model. In the first part, I used four machine learning algorithms to estimate the house prices (Kernel Ridge Regression, Random Forests, Gradient Boosting Machines and Neural Networks). For each of these models, I tuned the hyperparamters using Random Search. 
   
@@ -14,7 +14,7 @@
 
 ## Facial Mask Recognition using TensorFlow
 
-![Training Loss & Accuracy](https://github.com/shoaibmnagi/dspf/blob/master/images/accuracy.png)
+![Training Loss & Accuracy](/images/accuracy.png)
 
   I take a dataset consisting of people wearing Covid-19 masks from Kaggle to train an algorithm to recognize masks in unseen pictures. I first convert the pictoral data into a CSV so I can use it to train my algorithm. Then, I use data augmentation to improve our generalization for our images. This is done to use our limited data and increase its diveristy. For example, data augmentation will randomly rotate, crop or adjust the pictures in your dataset to create less-than-perfect versions of it. This, later on, allows the algorithm to pick up newer observations that might not be 100% clear to the naked eye (for example, a person hanging upside down wearing a mask etc.).
 
