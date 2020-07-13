@@ -27,5 +27,7 @@ I used a dataset from Kaggle to predict whether or not a given job listing is fa
 
 In the future, I plan on using a stacked model to see if it improves upon my False Negative Rate.
 
-## Tableau Dashboard
+## [Covid-19 in Germany - Interactive Tableau Dashboard](https://public.tableau.com/profile/shoaib.mehmood#!/vizhome/Covid-19inGermany-InteractiveDashboard/Dashboard1?publish=yes)
+
+A fully interactive dashboard made in Tableau using data from the Robert Koch Institute up until 12 July 2020. 
 
