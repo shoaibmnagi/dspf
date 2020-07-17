@@ -7,7 +7,8 @@
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -15,31 +16,34 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Data Science Portfolio</h1>
-        <p>Shoaib Mehmood</p>
-
-        <p class="view"><a href="https://github.com/shoaibmnagi/dspf">View the Project on GitHub <small>shoaibmnagi/dspf</small></a></p>
-
+        <h1 class="header">Data Science Portfolio</h1>
+        <p class="header">Shoaib Mehmood</p>
 
         <ul>
-          <li><a href="https://github.com/shoaibmnagi/dspf/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/shoaibmnagi/dspf/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/shoaibmnagi/dspf">View On <strong>GitHub</strong></a></li>
+          <li class="download"><a class="buttons" href="https://github.com/shoaibmnagi/dspf/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/shoaibmnagi/dspf/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/shoaibmnagi/dspf">View On GitHub</a></li>
         </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/shoaibmnagi">shoaibmnagi</a></p>
+
+
       </header>
       <section>
         <h1>
 <a id="data-science-portfolio---shoaib-mehmood" class="anchor" href="#data-science-portfolio---shoaib-mehmood" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Data Science Portfolio - Shoaib Mehmood</h1>
 <h2>
+<a id="book-recommendation-engine" class="anchor" href="#book-recommendation-engine" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://www.kaggle.com/shoaibmnagi/book-recommendation-system">Book Recommendation Engine</a>
+</h2>
+<p>A simple book recommendation engine constructed using the CMU Book Summaries Dataset. It breaks down the summaries of the books and plots the cosine similarities between different groups based on them. At the moment, I'm in the processing of upgrading this recommendation engine in order to make it more effective.</p>
+<h2>
 <a id="masters-thesis---estimating-house-prices-through-machine-learning" class="anchor" href="#masters-thesis---estimating-house-prices-through-machine-learning" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://github.com/shoaibmnagi/masters-thesis">Master's Thesis - Estimating House Prices through Machine Learning</a>
 </h2>
-<p><img src="https://github.com/shoaibmnagi/dspf/blob/master/images/comb.png" alt="Distribution of Obsvs given Sale Price"></p>
 <p>For my Master's thesis at the University of Mannheim, I used machine learning algorithms to predict house prices in Germany and compare the results with the traditional hedonic pricing model. In the first part, I used four machine learning algorithms to estimate the house prices (Kernel Ridge Regression, Random Forests, Gradient Boosting Machines and Neural Networks). For each of these models, I tuned the hyperparamters using Random Search.</p>
 <p>In the second part, I used Stacked Generalization to develop an ensemble meta-learner on the basis of my four machine learning algorithms. After compring the results, I concluded that the stacked ML model performs better than the traditional hedonic pricing model.</p>
 <h2>
 <a id="facial-mask-recognition-using-tensorflow" class="anchor" href="#facial-mask-recognition-using-tensorflow" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://www.kaggle.com/shoaibmnagi/face-mask-detection">Facial Mask Recognition using TensorFlow</a>
 </h2>
-<p><img src="https://github.com/shoaibmnagi/dspf/blob/master/images/accuracy.png" alt="Training Loss &amp; Accuracy"></p>
 <p>I took a dataset consisting of people wearing Covid-19 masks from Kaggle to train an algorithm to recognize masks in unseen pictures. I first converted the pictoral data into a CSV so I can use it to train my algorithm. Then, I used data augmentation to improve the generalization for the images. This is done to use our limited data and increase its diversity. For example, data augmentation will randomly rotate, crop or adjust the pictures in your dataset to create less-than-perfect versions of it. This, later on, allows the algorithm to pick up newer observations that might not be 100% clear to the naked eye (for example, a person hanging upside down wearing a mask etc.).</p>
 <p>Then, I did some fine-tuning to adjust the weights of the head layer of our neural network. After this process is done, I finally compiled and trained my neural network algorithm using my traininig data (using ADAM optimizer).</p>
 <p>I'm trying to integrate this algorithm with OpenCV, so I can use newer images from anywhere and let this algorithm figure out whether or not the person in the picture is wearing a mask. Once this is done, the project can be further exanded into one that can use video input to detect a fask mask.</p>
@@ -49,16 +53,16 @@
 <p>I used a dataset from Kaggle to predict whether or not a given job listing is fake based on its description. After cleaning the data, I carried out some basic text preprocessing and vectorization. Then I used three different models to predict whether or not a job posting is fake. These include a Logistic Regression, K-Nearest Neighbors (using Grid Search along with Cross Validation to find the optimum K), and Support Vector Classification.</p>
 <p>In the future, I plan on using a stacked model to see if it improves upon my False Negative Rate.</p>
 <h2>
-<a id="covid-19-in-germany---interactive-tableau-dashboard" class="anchor" href="#covid-19-in-germany---interactive-tableau-dashboard" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://public.tableau.com/profile/shoaib.mehmood#!/vizhome/Covid-19inGermany-InteractiveDashboard/Dashboard1?publish=yes">Covid-19 in Germany - Interactive Tableau Dashboard</a>
+<a id="table-dashboards" class="anchor" href="#table-dashboards" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://public.tableau.com/profile/shoaib.mehmood#!/">Table Dashboards</a>
 </h2>
-<p>A fully interactive dashboard made in Tableau using data from the Robert Koch Institute up until 12 July 2020.</p>
+<p><a href="https://public.tableau.com/profile/shoaib.mehmood#!/vizhome/Covid-19inGermany-InteractiveDashboard/Dashboard1?publish=yes">Covid-19 in Germany</a>: A fully interactive dashboard made in Tableau using data from the Robert Koch Institute up until 12 July 2020.</p>
+<p><a href="https://public.tableau.com/profile/shoaib.mehmood#!/vizhome/AcemoglusRequiem-DevelopmentandFreedom/Dashboard1">Acemoglu's Requiem</a>: A minimalist visualization that explores Daron Acemogly's hypothesis of a country's economic fortunate tied to its institutions.</p>
       </section>
       <footer>
-        <p>This project is maintained by <a href="https://github.com/shoaibmnagi">shoaibmnagi</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
   </body>
 </html>
